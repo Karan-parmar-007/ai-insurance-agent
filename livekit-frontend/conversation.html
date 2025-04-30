@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Conversation - LiveKit Insurance</title>
+</head>
+<body>
+  <h1>Insurance Assistant Conversation</h1>
+  <div id="conversation">
+    <!-- Conversation history will appear here -->
+  </div>
+  <div id="input-area">
+    <input type="text" id="textInput" placeholder="Type your message or use the mic..." />
+    <button id="sendTextBtn">Send</button>
+    <button id="recordBtn">🎤 Record</button>
+    <audio id="audioPlayback" controls style="display:none;"></audio>
+  </div>
+  <button id="backBtn">Back to Join</button>
+  <script type="module" src="/src/conversation.js"></script>
+</body>
+</html>
