@@ -38,7 +38,7 @@ class VoiceAgent:
             user_input = transcript.lower()
 
             if self.state == "waiting_for_input":
-                if "register" in user_input:
+                if "register" in user_input or "purchase" in user_input or "buy" in user_input:
                     self.state = "registering_email"
                     prompt = "Please provide your email address to register."
                     audio_bytes = generate_speech(prompt)
